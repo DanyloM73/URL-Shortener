@@ -1,8 +1,47 @@
-# React + Vite
+# URL Shortener
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Виконане завдання на МКР з дисципліни **Технології програмування користувацьких інтерфейсів (Frоnt-еnd)**
 
-Currently, two official plugins are available:
+## Загальна інформація про додаток
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Веб-застосунок реалізовано за допомогою [React](https://react.dev/)
+
+Додаток для роботи використовує наступний [бекенд](https://github.com/KPI-FICT-FrontEnd/shortener)
+
+Для взаємодії з бекендом у застосунку використовується бібліотека [Axios](https://axios-http.com/)
+
+Для генерації графіків на сторінці використовується бібліотека [Chart.js](https://www.chartjs.org/)
+
+## Функціонал застосунку
+
+В додатку реалізовані наступні функції:
+
+- реєстрація користувачів
+- автентифікація користувачів
+- створення скорочених посилань
+- перегляд створених поточним користувачем посилань
+- перегляд графіків по кліках на ці посилання (по днях/годинах/хвилинах)
+
+## Інструкція по запуску
+
+1. Розгорнути і запустити [бекенд](https://github.com/KPI-FICT-FrontEnd/shortener?tab=readme-ov-file#%D1%88%D0%B2%D0%B8%D0%B4%D0%BA%D0%B8%D0%B9-%D0%B7%D0%B0%D0%BF%D1%83%D1%81%D0%BA)
+
+2. Клонувати цей проєкт на локальну машину
+
+```bash
+git clone https://github.com/DanyloM73/URL-Shortener
+```
+
+3. Інсталювати необхідні для роботи застосунку бібліотеки
+
+```bash
+npm install
+```
+
+4. Створити в корені проєкту `.env` файл, в якому зазначити як змінну середовища базове посилання на бекенд, наприклад, `VITE_API_BASE_URL=http://localhost:8000` 
+
+5. Запустити проєкт і відкрити [http://localhost:5173/](http://localhost:5173/)
+
+```bash
+npm run dev
+```
